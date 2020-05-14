@@ -10,7 +10,7 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-card button="true" (click)="record()">
+        <ion-card button="true" (click)="recordSetting()">
           <ion-card-header>
             <ion-icon name="videocam" size="large"></ion-icon>
             <ion-card-title>视频拍摄</ion-card-title>
@@ -18,20 +18,38 @@
         </ion-card>
       </ion-col>
       <ion-col>
-        <ion-card button="true" (click)="crop()">
+        <ion-card button="true" (click)="record()">
           <ion-card-header>
-            <ion-icon name="crop" size="large"></ion-icon>
-            <ion-card-title>视频裁剪</ion-card-title>
+            <ion-icon name="videocam" size="large"></ion-icon>
+            <ion-card-title>快速拍摄</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col>
-        <ion-card button="true" (click)="edit()">
+        <ion-card button="true" (click)="cropSetting()">
+          <ion-card-header>
+            <ion-icon name="crop" size="large"></ion-icon>
+            <ion-card-title>视频裁剪</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card button="true" (click)="editSetting()">
           <ion-card-header>
             <ion-icon name="create" size="large"></ion-icon>
             <ion-card-title>视频编辑</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card button="true" (click)="beauty()">
+          <ion-card-header>
+            <ion-icon name="happy" size="large"></ion-icon>
+            <ion-card-title>美颜</ion-card-title>
           </ion-card-header>
         </ion-card>
       </ion-col>
